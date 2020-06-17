@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  *
@@ -13,8 +8,8 @@ public class Produto {
     private String nome;
     
     public Produto(int preco, String nome){
-        this.nome = nome;
         this.preco = preco;
+        this.nome = nome;
     }
     
     public int getPreco() {

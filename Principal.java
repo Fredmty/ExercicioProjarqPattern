@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 import java.util.*;
 /**
  *
@@ -13,10 +9,12 @@ public class Principal {
         Scanner sc = new Scanner(System.in);
 
         Facade fachada = new Facade();
-        fachada.AdicionaProdutoObserver(CarrinhodeCompras.getInstance(false));
+        fachada.AdicionaProdutoObserver(CarrinhodeCompras.getInstance(false)); //ato de notificar e criar o carrinho para as compras
 
         while (1 > 0) {
-            System.out.println("0 - Finalizar compra\n 1 - Adicionar um produto no seu carrinho\n 2 - Encerrar a aplicação");
+            System.out.println("0 - Finalizar compra");
+            System.out.println("1 - Adicionar um produto no seu carrinho");
+            System.out.println("2 - Encerrar a aplicação");
             System.out.println(CarrinhodeCompras.getInstance(false).toString());
 
             int in = sc.nextInt();
