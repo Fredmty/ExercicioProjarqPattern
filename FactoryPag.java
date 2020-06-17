@@ -8,7 +8,7 @@
  *
  * @author Frederico
  */
-public class FactoryPag {
+public class FactoryPag { //auto explicativo 
     public MetPag escolheCartao(int escolha) {
         switch(escolha){
             case 1:

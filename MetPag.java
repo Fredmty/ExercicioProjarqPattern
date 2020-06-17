@@ -8,6 +8,6 @@
  *
  * @author Frederico
  */
-public interface MetPag {
+public interface MetPag { //strategy 
     boolean pago(int valor);
 }

@@ -32,7 +32,7 @@ public class CarrinhodeCompras implements AdicionaProdutoObserver {
     
     
     @Override
-    public void adicionaProduto(EventoAdicionaProduto event){
+    public void adicionaProduto(EventoAdicionaProduto event){ //observer 
         Produto p = event.getProduto();
         Caixa.add(p);
         Total = Total + p.getPreco();
